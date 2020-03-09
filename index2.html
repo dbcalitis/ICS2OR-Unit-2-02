@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Javascript">
+    <meta name="keywords" content="Javascript, HTML, Crossover">
+    <meta name="author" content="Daria Bernice Calitis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 3</title>
+  </head>
+  <body>
+    <p id="change">Change this paragraph with the button below me!</p>
+    <button onclick="Change()">Change Everything</button>
+    <script>
+      function Change() {
+        document.getElementById("change").style.fontFamily = "Fantasy";
+        document.getElementById("change").style.fontSize = '50px';
+        document.getElementById("change").style.color = "violet"
+      }
+    </script>
+  </body>
+</html>
