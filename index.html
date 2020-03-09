@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Javascript">
+    <meta name="keywords" content="Javascript, HTML, Crossover">
+    <meta name="author" content="Daria Bernice Calitis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 2</title>
+  </head>
+  <body id="background">
+    <h1>Javascript Demonstration</h1>
+    <p id="dis/appear" onclick="Bloop()">This shows the capabilities of Javascript. Click this block to make it disappear</p>
+    <button onclick="BackgroundChange()">Click me to change the background!</button>
+    <p id= "button" onclick="Button()" style="display:">Click me!</p>
+    <img id= "changeimage" src="./images/Ladybug.jpg">
+    <button onclick="ImageChange1()">Ladybug</button>
+    <button onclick = "ImageChange2()">Cat Noir</button>
+    <script>
+      function Button() {
+        document.getElementById("button").innerHTML = "Miraculous: Tales of Ladybug and Chat Noir";
+      }
+      function ImageChange1() {
+        document.getElementById("changeimage").src = "./images/Ladybug.jpg";
+      }
+      function ImageChange2() {
+        document.getElementById("changeimage").src ="./images/CatNoir.png";
+      }
+      function BackgroundChange() {
+        document.getElementById("background").style.backgroundColor = 'red';
+      }
+      function Bloop() {
+          document.getElementById("dis/appear").style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
