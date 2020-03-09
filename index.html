@@ -10,12 +10,12 @@
   </head>
   <body id="background">
     <h1>Javascript Demonstration</h1>
-    <p id="dis/appear" onclick="Bloop()">This shows the capabilities of Javascript. Click this block to make it disappear</p>
+    <p id="disappear" onclick="Bloop()">This shows the capabilities of Javascript. Click this block to make it disappear</p>
     <button onclick="BackgroundChange()">Click me to change the background!</button>
-    <p id= "button" onclick="Button()" style="display:">Click me!</p>
-    <img id= "changeimage" src="./images/Ladybug.jpg">
+    <p id="button" onclick="Button()">Click me!</p>
+    <img id="changeimage" src="./images/Ladybug.jpg">
     <button onclick="ImageChange1()">Ladybug</button>
-    <button onclick = "ImageChange2()">Cat Noir</button>
+    <button onclick="ImageChange2()">Cat Noir</button>
     <script>
       function Button() {
         document.getElementById("button").innerHTML = "Miraculous: Tales of Ladybug and Chat Noir";
@@ -30,7 +30,7 @@
         document.getElementById("background").style.backgroundColor = 'red';
       }
       function Bloop() {
-          document.getElementById("dis/appear").style.display = 'none';
+          document.getElementById("disappear").style.display = 'none';
       }
     </script>
   </body>
